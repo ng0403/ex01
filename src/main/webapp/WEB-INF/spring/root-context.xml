@@ -13,11 +13,10 @@
    <bean id="oracleDatasource" class="oracle.jdbc.pool.OracleDataSource"
       destroy-method="close">
       <property name="URL" value="jdbc:oracle:thin:@localhost:1521:sns" />
-      <property name="user" value="sns" />
-      <property name="password" value="1q2w3e4r" />
+      <property name="user" value="web" />
+      <property name="password" value="web" />
       <property name="connectionCachingEnabled" value="true" />
       <qualifier value="main-db" />  
-      
    </bean>
      <!-- MyBatis SqlSessionFactoryBean -->
    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
